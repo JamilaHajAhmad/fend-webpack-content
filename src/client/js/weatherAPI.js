@@ -65,7 +65,7 @@ const dynamicUiUpdate = async () => {
     try {
         const data = await request.json();
         let content = document.createElement('div');
-        content.textContent = `temperature = ${data.temp} || date = ${data.date}`
+        content.textContent = `temperature = ${data.temperature} || date = ${data.date}`
         document.body.append(content);
     }
     catch(Error) {
