@@ -1,5 +1,9 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { performAction } from './js/weatherAPI'
+import { getWeatherData } from './js/weatherAPI'
+import { postData } from './js/weatherAPI'
+import { dynamicUiUpdate } from './js/weatherAPI'
 import './styles/base.scss'
 import './styles/footer.scss'
 import './styles/form.scss'
@@ -13,5 +17,9 @@ console.log("CHANGE!!");
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    performAction,
+    getWeatherData,
+    postData,
+    dynamicUiUpdate
 }
